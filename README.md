@@ -37,3 +37,4 @@
 
 - for any components in vite you must use .jsx as an extention
 - npm run dev - to run the program
+sidebar
