@@ -22,7 +22,7 @@ const Home = () => {
               transition={{
                 duration: 0.6,
                 repeat: Infinity,
-                repeatType: "reverse", // Like yoyo
+                repeatType: "reverse",
                 ease: "easeOut",
               }}
               className="  absolute top-0 right-5 w-[30px] h-[30px] rounded-full

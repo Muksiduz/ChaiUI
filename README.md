@@ -37,3 +37,19 @@
 
 - for any components in vite you must use .jsx as an extention
 - npm run dev - to run the program
+
+# Goals-
+
+Build FORM components - 3 different types
+TESTIMONIAL components
+Bento
+Buttons
+Dashboard - 3 different types
+Hero section -3 different types
+Navbar - 3 different types
+Product view - section -3 different types
+Cards - large ,small, medium
+Footer -3 different types
+Modals - 3 different types
+Search - 3 different types
+Side Navbar
