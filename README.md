@@ -40,16 +40,24 @@
 
 # Goals-
 
-Build FORM components - 3 different types
+# Build FORM components - 3 different types - DIpti
+
 TESTIMONIAL components
-Bento
-Buttons
+
+# Bento - Swapnil
+
+# Buttons - TechFosters
+
 Dashboard - 3 different types
-Hero section -3 different types
-Navbar - 3 different types
+
+# Hero section -3 different types -> Muksid
+
+# Navbar - 3 different types - Ritesh
+
 Product view - section -3 different types
-Cards - large ,small, medium
+
+# Cards - large ,small, medium - Satya
+
 Footer -3 different types
 Modals - 3 different types
 Search - 3 different types
-Side Navbar
