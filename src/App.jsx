@@ -1,14 +1,12 @@
-import Home from "./MuksidRandom/HomePage/MainHome/Home";
-import PortfolioHero from "./MuksidRandom/HeroSections/PortfolioHero";
-import Navbar from "./MuksidRandom/Navbar/Navbar";
-
 function App() {
   return (
     <>
-      <div className="relative flex justify-center">
-        <Navbar />
-        <Home />
-      </div>
+      {/* make a seperate page in your file and show it here and then leave it as it is - it causes an git error -
+    currently no idea how to solve it , so finding an work around */}
+
+      {/* kindly try not to make any changes outside of your folder it causes a lot of errors - to merge them */}
+
+      {/* during commit please write your name  */}
     </>
   );
 }
