@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../Components/Button/Button";
+import Button from "../../../Components/Button/Button";
 import { motion } from "motion/react";
-import WaveAnimation from "../../MuksidRandom/WaveAnimation/WaveAnimation";
+import WaveAnimation from "../../WaveAnimation/WaveAnimation";
 const Home = () => {
   return (
     <div className=" bg-[linear-gradient(360deg,_rgba(254,115,1,1),_rgba(255,255,255,1))] w-full h-screen flex align-middle items-center justify-center  dark:bg-[linear-gradient(360deg,_rgba(254,115,1,1),_rgba(0,0,0,1))]">

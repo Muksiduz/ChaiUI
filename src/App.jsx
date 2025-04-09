@@ -1,4 +1,4 @@
-import Home from "./HomePage/MainHome/Home";
+import Home from "./MuksidRandom/HomePage/MainHome/Home";
 import PortfolioHero from "./MuksidRandom/HeroSections/PortfolioHero";
 import Navbar from "./MuksidRandom/Navbar/Navbar";
 
