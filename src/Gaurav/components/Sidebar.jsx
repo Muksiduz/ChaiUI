@@ -1,34 +1,38 @@
-import React from 'react';
-import { FaHome, FaFileAlt, FaChartBar, FaShieldAlt, FaBug, FaUserShield, FaLock, FaDatabase } from 'react-icons/fa';
-import { MdOutlineExpandMore } from 'react-icons/md';
-import { useState } from 'react';
+import React from "react";
+import {
+  FaHome,
+  FaFileAlt,
+  FaChartBar,
+  FaShieldAlt,
+  FaBug,
+  FaUserShield,
+  FaLock,
+  FaDatabase,
+} from "react-icons/fa";
+import { MdOutlineExpandMore } from "react-icons/md";
+import { useState } from "react";
+import logo from "../../assets/images/logo.png";
 
-import {toggleDarkMode} from '../../MuksidRandom/Toggle/toggleLogic'
-
+import { toggleDarkMode } from "../../MuksidRandom/Toggle/toggleLogic";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false)
-   
-
-    const toggle = ()=>{
-        setIsOpen(!isOpen)
-    }
-
-//     const [isDark, setIsDark] = useState(true);
-
-//   const darkMode = () => {
-//     setIsDark(!isDark);
-//   };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="absolute top-0 left-0 min-h-screen w-64 bg-white text-black dark:bg-[#111827] dark:text-white  shadow-lg flex flex-col justify-between">
-      
       {/* Header */}
       <div className="p-6 flex items-center justify-between">
-        <h1 className="text-xl font-bold">chaiUI</h1>
+        <img className="w-[50%] h-[50%]" src={logo} alt="" />
 
-        <button onClick={toggleDarkMode} className="text-sm bg-gray-700 px-2 py-1 rounded">🌓</button>
+        <button
+          onClick={toggleDarkMode}
+          className="text-sm bg-gray-700 px-2 py-1 rounded">
+          🌓
+        </button>
       </div>
 
       {/* Navigation */}
@@ -52,50 +56,47 @@ const Sidebar = () => {
           <div className="flex justify-between items-center text-sm text-gray-400 mb-2">
             <span>COMPONENTS</span>
             <button onClick={toggle}>
-            <MdOutlineExpandMore />
+              <MdOutlineExpandMore />
             </button>
-
           </div>
 
-<div className={`${isOpen ? 'block' : 'hidden'} mt-4`}>
-          <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2 hover:text-white">
-              <FaChartBar />
-              <span>Overview</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaShieldAlt />
-              <span>Risk Profile</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaBug />
-              <span>Remediation</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaDatabase />
-              <span>Domains</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaBug />
-              <span>Vulnerabilities</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaUserShield />
-              <span>Identity breaches</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaLock />
-              <span>Data leaks</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaShieldAlt />
-              <span>Security profile</span>
-            </li>
-          </ul>
+          <div className={`${isOpen ? "block" : "hidden"} mt-4`}>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-center gap-2 hover:text-white">
+                <FaChartBar />
+                <span>Overview</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaShieldAlt />
+                <span>Risk Profile</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaBug />
+                <span>Remediation</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaDatabase />
+                <span>Domains</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaBug />
+                <span>Vulnerabilities</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaUserShield />
+                <span>Identity breaches</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaLock />
+                <span>Data leaks</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaShieldAlt />
+                <span>Security profile</span>
+              </li>
+            </ul>
+          </div>
         </div>
-
-  </div>
-
 
         {/* Another Section Divider */}
         <hr className="my-6 border-gray-600" />
