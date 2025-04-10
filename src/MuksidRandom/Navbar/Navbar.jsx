@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="absolute w-[100%] top-0 backdrop-blur-md   pl-10 pr-10 dark:text-white dark:backdrop-blur-xs">
+    <div className="absolute z-10 w-[100%] top-0 backdrop-blur-md   pl-10 pr-10 dark:text-white dark:backdrop-blur-xs">
       <div className="flex justify-between p-2">
         <ul className="flex gap-10 items-center">
           <li className=" p-0">

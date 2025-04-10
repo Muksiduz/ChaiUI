@@ -23,18 +23,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="absolute top-40 left-80 min-h-screen w-64 bg-white text-black dark:bg-[#111827] dark:text-white  shadow-lg flex flex-col justify-between">
-      {/* Header */}
-      <div className="p-6 flex items-center justify-between">
-        <img className="w-[50%] h-[50%]" src={logo} alt="" />
-
-        <button
-          onClick={toggleDarkMode}
-          className="text-sm bg-gray-700 px-2 py-1 rounded">
-          🌓
-        </button>
-      </div>
-
+    <div className="absolute top-auto pt-3 left-0 min-h-screen w-64 bg-white text-black dark:bg-[#111827] dark:text-white  shadow-lg flex flex-col justify-between">
       {/* Navigation */}
       <div className="px-6">
         <div className="space-y-4">
@@ -113,19 +102,6 @@ const Sidebar = () => {
         <div className="flex justify-between items-center text-sm text-gray-400 mb-2">
           <span>MANAGED SERVICE</span>
           <MdOutlineExpandMore />
-        </div>
-      </div>
-
-      {/* Footer */}
-      <div className="px-6 py-4 flex items-center gap-3 border-t border-gray-700">
-        <img
-          src="https://i.pravatar.cc/40?img=3"
-          alt="avatar"
-          className="w-10 h-10 rounded-full"
-        />
-        <div>
-          <p className="text-sm font-semibold">Alicia Vikander</p>
-          <p className="text-xs text-gray-400">alicia@sisyphus.com</p>
         </div>
       </div>
     </div>
