@@ -1,14 +1,14 @@
 import React from "react";
-import Home from "./HomePage/MainHome/Home";
+import HomeSecond from "./HomePage/MainHome/HomeSecond";
 import Navbar from "./Navbar/Navbar";
 // import ComponentsPage from "./ComponentsPage/ComponentsPage";
 
 const MuksidPage = () => {
   return (
     <>
-      <Navbar />
       <div className="relative flex justify-center">
-        <Home />
+        <Navbar />
+        <HomeSecond />
       </div>
     </>
   );

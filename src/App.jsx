@@ -10,10 +10,11 @@ function App() {
       {/* <MuksidPage /> */}
 
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/components" element={<Gaurav />} />
           <Route path="/" element={<MuksidPage />} />
+          <Route path="/components" element={<Gaurav />}>
+            <Route />
+          </Route>
         </Routes>
       </Router>
 
