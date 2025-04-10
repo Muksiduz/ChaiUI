@@ -1,13 +1,16 @@
 import React from "react";
-import Home from "./MuksidRandom/HomePage/MainHome/Home";
-import Navbar from "./MuksidRandom/Navbar/Navbar";
+import Home from "./HomePage/MainHome/Home";
+import Navbar from "./Navbar/Navbar";
+// import ComponentsPage from "./ComponentsPage/ComponentsPage";
 
 const MuksidPage = () => {
   return (
-    <div className="relative flex justify-center">
+    <>
       <Navbar />
-      <Home />
-    </div>
+      <div className="relative flex justify-center">
+        <Home />
+      </div>
+    </>
   );
 };
 
