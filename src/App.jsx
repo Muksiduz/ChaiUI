@@ -5,7 +5,7 @@ import HomePage from "./MuksidRandom/HomePage";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen dark:bg-black w-full h-full">
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -16,7 +16,7 @@ function App() {
     currently no idea how to solve it , so finding an work around */}
       {/* kindly try not to make any changes outside of your folder it causes a lot of errors - to merge them */}
       {/* during commit please write your name  */}
-    </>
+    </div>
   );
 }
 

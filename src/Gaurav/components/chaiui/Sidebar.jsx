@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/Gaurav/components/Sidebar.jsx
 import React from "react";
 import {
   FaHome,
@@ -12,6 +13,14 @@ import {
 import { MdOutlineExpandMore } from "react-icons/md";
 import { useState } from "react";
 import logo from "../../assets/images/logo.png";
+=======
+import React from 'react';
+import { FaHome, FaFileAlt, FaChartBar, FaShieldAlt, FaBug, FaUserShield, FaLock, FaDatabase } from 'react-icons/fa';
+import { MdOutlineExpandMore } from 'react-icons/md';
+import { useState } from 'react';
+
+import {toggleDarkMode} from '../../../MuksidRandom/Toggle/toggleLogic'
+>>>>>>> aa2686043e9a79de25af3ff661e7cf938963042b:src/Gaurav/components/chaiui/Sidebar.jsx
 
 import { toggleDarkMode } from "../../MuksidRandom/Toggle/toggleLogic";
 
