@@ -3,7 +3,7 @@ import { FaHome, FaFileAlt, FaChartBar, FaShieldAlt, FaBug, FaUserShield, FaLock
 import { MdOutlineExpandMore } from 'react-icons/md';
 import { useState } from 'react';
 
-import {toggleDarkMode} from '../../MuksidRandom/Toggle/toggleLogic'
+import {toggleDarkMode} from '../../../MuksidRandom/Toggle/toggleLogic'
 
 
 const Sidebar = () => {
