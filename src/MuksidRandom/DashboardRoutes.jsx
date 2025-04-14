@@ -20,7 +20,7 @@ const DashboardRoutes = () => {
       <div className="mx-[10%] mr-[5%] flex flex-col w-full scale-75 mt-[-16%]">
         <Routes>
           <Route path="/gaurav" element={<Gaurav />} />
-          <Route path="/muksid" element={<ComponentsShowButtons />} />
+          <Route path="/muksid" element={<MuksidPage />} />
           <Route path="/swapnil" element={<Swapnil />} />
           <Route path="/techFoster" element={<AppButton />} />
         </Routes>

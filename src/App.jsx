@@ -8,7 +8,7 @@ function App() {
     <div className="min-h-screen dark:bg-black w-full h-full">
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<MuksidPage />} />
           <Route path="/*" element={<DashboardRoutes />} />
         </Routes>
       </Router>
