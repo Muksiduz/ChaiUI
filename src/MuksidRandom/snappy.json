@@ -1,0 +1,15 @@
+{
+    "name": "Button",
+    "type": "registry:ui",
+    "dependencies": [],
+    "files": [
+      {
+        "path": "components/button.tsx",
+        "content": "import { cn } from \"@/lib/cn\";\n\ntype ButtonVariant = \"default\" | \"primary\" | \"success\" | \"destructive\" | \"outline\" | \"ghost\" | \"warning\" | \"gradient\";\ntype ButtonSize = \"sm\" | \"default\" | \"lg\" | \"xl\";\n\ntype ButtonProps = {\n  children: React.ReactNode;\n  className?: string;\n  variant?: ButtonVariant;\n  size?: ButtonSize;\n  disabled?: boolean;\n} & React.ButtonHTMLAttributes\u003CHTMLButtonElement\u003E;\n\nexport default function Button({\n  children,\n  className,\n  variant = \"default\",\n  size = \"default\",\n  disabled = false,\n  ...props\n}: ButtonProps) {\n  const variantStyles = {\n    default: \"bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200\",\n    primary: \"bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500\",\n    success: \"bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-500\",\n    destructive: \"bg-red-600 text-white hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-500\",\n    outline: \"border border-gray-300 bg-transparent text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-800\",\n    ghost: \"bg-transparent text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800\",\n    warning: \"bg-yellow-600 text-white hover:bg-yellow-700 dark:bg-yellow-600 dark:hover:bg-yellow-500\",\n    gradient: \"bg-gradient-to-r from-[#000000] to-[#0060ba] text-white rounded-lg transition-all duration-300 ease-in-out hover:brightness-110\",\n  };\n\n  const sizeStyles = {\n    sm: \"h-8 px-3 text-xs\",\n    default: \"h-10 px-4 py-2\",\n    lg: \"h-12 px-6 py-3 text-lg\",\n    xl: \"h-14 px-8 py-4 text-xl\",\n  };\n\n  return (\n    \u003Cbutton\n      className={cn(\n        \"inline-flex items-center justify-center rounded-md font-medium transition-colors\",\n        \"focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500\",\n        \"disabled:opacity-50 disabled:pointer-events-none\",\n        variantStyles[variant],\n        sizeStyles[size],\n        className,\n      )}\n      disabled={disabled}\n      {...props}\n    \u003E\n      {children}\n    \u003C/button\u003E\n  );\n}",
+        "type": "registry:ui",
+        "target": "components/ui/snappy-button.tsx"
+      }
+    ],
+    "author": "Snappy UI Team",
+    "title": "Snappy Button"
+  }

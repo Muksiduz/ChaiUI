@@ -1,13 +1,7 @@
-import Sidebar from "./components/Sidebar";
-// import Right from './components/Right'
+import React from "react";
 
-function Gaurav() {
-  return (
-    <div className="flex h-screen">
-      <Sidebar className="w-1/4 bg-gray-800 text-white p-4" />
-      {/* <Right className="w-3/4 bg-white p-4" /> */}
-    </div>
-  );
-}
+const Gaurav = () => {
+  return <div>Gaurav</div>;
+};
 
 export default Gaurav;

@@ -1,60 +1,76 @@
-import React, { useState } from 'react';
-import Logo from "..src/assets/images/logos/without-ui/dark-logo-without-ui.png";
+import React, { useState } from "react";
+import Logo from "../../assets/images/logos/without-ui/dark-logo-without-ui.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
-	const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false);
 
-	const handleMenu = () => {
-		setMenu(!menu);
-	};
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
 
-	return (
-		<div className='relative'>
-			<nav className='mx-auto max-w-7xl px-4 md:px-6 py-5 flex justify-between items-center'>
-				{/* Left - Logo */}
-				<div className="w-12">
-					<img src={Logo} alt="Logo" className='w-full h-auto' />
-				</div>
+  return (
+    <div className="relative">
+      <nav className="mx-auto max-w-7xl px-4 md:px-6 py-5 flex justify-between items-center">
+        {/* Left - Logo */}
+        <div className="w-12">
+          <img src={Logo} alt="Logo" className="w-full h-auto" />
+        </div>
 
-				{/* Desktop Menu */}
-				<div className='hidden md:flex items-center gap-10'>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>Home</a>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>Work</a>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>About</a>
-				</div>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-10">
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            Work
+          </a>
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            About
+          </a>
+        </div>
 
-				{/* Mobile Menu Icon */}
-				<div className='md:hidden z-50' onClick={handleMenu}>
-					{menu ? <MdOutlineClose size={24} /> : <GiHamburgerMenu size={24} />}
-				</div>
-			</nav>
-			<div className="hidden md:block w-full h-[1px] bg-gray-200 shadow-sm"></div>
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden z-50" onClick={handleMenu}>
+          {menu ? <MdOutlineClose size={24} /> : <GiHamburgerMenu size={24} />}
+        </div>
+      </nav>
+      <div className="hidden md:block w-full h-[1px] bg-gray-200 shadow-sm"></div>
 
-
-			{/* Mobile Menu Dropdown */}
-			{menu && (
-				<div className='md:hidden flex flex-col gap-5 p-5 absolute top-16 right-0 bg-white w-3/4 h-screen shadow-md z-40'>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>Home</a>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>Work</a>
-					<a href="#" className='text-slate-600 hover:text-slate-900 duration-200'>About</a>
-				</div>
-			)}
-		</div>
-	);
+      {/* Mobile Menu Dropdown */}
+      {menu && (
+        <div className="md:hidden flex flex-col gap-5 p-5 absolute top-16 right-0 bg-white w-3/4 h-screen shadow-md z-40">
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            Work
+          </a>
+          <a
+            href="#"
+            className="text-slate-600 hover:text-slate-900 duration-200">
+            About
+          </a>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default Navbar;
 
-
-
-
-
-
 // Basic design ----------
-
-
 
 // import React, { useState } from 'react';
 // import Logo from "../assets/dark-logo-without-ui.png";
@@ -65,7 +81,7 @@ export default Navbar;
 
 // 	// render the icons on condition
 // 	const [menu, setMenu] = useState(false);
-	
+
 // 	// change the icon state
 // 	const handleMenu = () => {
 // 		setMenu(!menu);
@@ -77,7 +93,7 @@ export default Navbar;
 // 				<div className="flex justify-between items-center">
 // 					{/* Left side - Logo */}
 // 					<div className="w-12">
-// 						<img src={Logo} alt="Logo" 
+// 						<img src={Logo} alt="Logo"
 // 						/>
 // 					</div>
 
@@ -94,7 +110,6 @@ export default Navbar;
 // 							{/* rendering 2 icons */}
 // 							{menu ? <MdOutlineClose /> : <GiHamburgerMenu />}
 // 						</div>
-						
 
 // 						{/* creating mobile nav links */}
 // 						<div>
