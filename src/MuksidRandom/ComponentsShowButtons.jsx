@@ -1,4 +1,10 @@
 import React from "react";
+import TestCode from "./TestCode";
+import CopyButton from "./CopyButton";
+import Home from "./HomePage/MainHome/Home";
+import HomeSecond from "./HomePage/MainHome/HomeSecond";
+
+const myTestCode = `import React from "react";
 import Button from "../../ComponentsShow/Components/Button/Button";
 import { motion } from "motion/react";
 import WaveAnimation from "../../WaveAnimation/WaveAnimation";
@@ -60,3 +66,53 @@ const Home = () => {
 };
 
 export default Home;
+`;
+
+const ComponentsShowButtons = () => {
+  return (
+    <div>
+      <div>
+        <h1 className="text-6xl  font-bold dark:text-white">Hero Sections</h1>
+        <h1 className="text-2xl p-4 text-gray-400">
+          A list of awsome Hero Sections to Fast Build your Product,No
+          configuration copy paste and Install to build your UI
+        </h1>
+        <h1 className="text-xl p-2 pl-4 text-gray-400">
+          Toggle The Dark mode to see the Dark effect
+        </h1>
+      </div>
+      <div>
+        <h1 className="text-3xl mt-4 font-bold  text-gray-600 dark:text-white">
+          Install dependencies
+        </h1>
+        {/* Another Section Divider */}
+        <hr className="my-8 border-gray-400" />
+        <CopyButton />
+      </div>
+      {/* first home page  */}
+      <div className="mt-15">
+        <h1 className="text-4xl text-orange-400 mt-4 font-bold ">
+          Snacky ChaiUI Home page
+        </h1>
+        {/* Another Section Divider */}
+        <hr className="my-8 border-gray-400" />
+        <div className="mt-8">
+          <TestCode codeString={myTestCode} PreviewComponent={HomeSecond} />
+        </div>
+      </div>
+      {/* second home page  */}
+      <div className="mt-15">
+        <h1 className="text-4xl text-orange-400 mt-4 font-bold ">
+          Chai Buscit Home page
+        </h1>
+        {/* Another Section Divider */}
+        <hr className="my-8 border-gray-400" />
+        <div className="mt-8">
+          <TestCode codeString={myTestCode} PreviewComponent={Home} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ComponentsShowButtons;
